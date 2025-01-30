@@ -21,6 +21,10 @@ const User = sequelize.define("user", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  is_admin: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: false,
+  },
   createdAt: {
     type: DataTypes.DATE,
     allowNull: false,
